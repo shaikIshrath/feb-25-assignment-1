@@ -1,0 +1,22 @@
+n=int(input("enter no.of numbers:"))
+l=[]
+t=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+x=0
+for i in range(n):
+    if l[i]!=0:
+        t.append(l[i])
+        x=x+1
+for i in range(n):
+    if l[i]<0:
+        t.append(l[i])
+print(t)
+output:enter no.of numbers:5
+1
+2
+4
+-9
+-6
+[1, 2, 4, -9, -6, -9, -6]
